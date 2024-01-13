@@ -1,0 +1,627 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Righteous", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+
+/*****************************************************************************/
+/********navbar**************************************************************/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3.2rem;
+  margin-left: 4.8rem;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4.2rem;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.1),
+    rgba(18, 59, 99, 0.8)
+  );
+
+  padding: 0 30.4rem 0 10.4rem;
+}
+.nav-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 3.2rem 0;
+}
+
+.active {
+  border-bottom: 2px solid white;
+}
+.img-fluid {
+  max-width: 100%;
+}
+.num {
+  font-weight: 600;
+  color: white;
+}
+.line {
+  margin-right: -10%;
+  width: 50rem;
+  height: 0.2rem;
+  background-color: rgba(128, 128, 128, 0.2);
+  z-index: 1;
+}
+.icon {
+  display: none;
+}
+.navbar-mobile {
+  display: none;
+}
+/************home*********************************************/
+.home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url("/images/background-home-desktop.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text {
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.4rem;
+}
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40rem;
+  margin-top: 20.4rem;
+}
+.home-container-text {
+  flex: 1;
+  max-width: 45rem;
+}
+.home-container-illustration {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  background-color: white;
+  border-radius: 100rem;
+  text-align: center;
+  padding: 8rem 3.5rem;
+  max-width: 20rem;
+  flex: 1;
+}
+.text-span-one {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+.text-span-two {
+  font-size: 1.1rem;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 35rem;
+}
+.text-big {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 12.4rem;
+}
+/*************destination******************************************/
+.destination {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url("/images/background-destination-desktop.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar-destination {
+  background-image: none;
+
+  padding: 0;
+  margin-bottom: 3.2rem;
+}
+.nav-destination {
+  padding: 1.2rem 0;
+}
+.mars {
+  max-width: 100rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  margin-top: 18.4rem;
+}
+.title {
+  color: white;
+  font-weight: 200;
+  font-size: 2.4rem;
+}
+.title-name {
+  color: white;
+  font-size: 6.4rem;
+  font-weight: 200;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.container-pic {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4.2rem;
+  flex: 1;
+}
+.container-text {
+  flex: 1;
+}
+.description-text {
+  font-size: 1.3rem;
+  line-height: 2;
+  padding: 3.2rem 2.8rem 5.4rem 0rem;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.25);
+}
+.container {
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6.4rem;
+}
+.second-title {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 100;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.text-second {
+  color: white;
+  font-size: 3.2rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-transform: uppercase;
+}
+.distance,
+.travel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.num-destination {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 2rem;
+}
+
+/*************crew******************************************/
+.crew {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url("/images/background-crew-desktop.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar-crew {
+  background-image: none;
+  gap: 2rem;
+  max-width: 20rem;
+}
+.nav-crew {
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 100rem;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.link-crew {
+  border-radius: 100rem;
+}
+.activeCrew {
+  background-color: white;
+}
+.role {
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 300;
+  font-size: 2.8rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.name {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 300;
+  font-size: 5.4rem;
+  color: white;
+}
+.bio {
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 2;
+  max-width: 35rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+.container-text-crew {
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 3.2rem;
+}
+.title-crew {
+  align-self: flex-start;
+  margin-top: 20rem;
+  margin-bottom: -10rem;
+  margin-left: 15rem;
+}
+.navbarCrew {
+  margin-top: 5.4rem;
+  margin-left: -10rem;
+}
+.image-personnage {
+  width: 75%;
+}
+
+/*************technology*****************************************/
+.technology {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url("/images/background-technology-desktop.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-technology {
+  border: none;
+  max-width: 43rem;
+}
+.tech-role {
+  font-size: 1.3rem;
+}
+.container-text-technology {
+  gap: 10rem;
+}
+.nav-link-tech {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border: 2px solid white;
+  text-align: center;
+  padding: 2.1rem 2.6rem;
+  border-radius: 100rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: white;
+}
+.navbar-tech {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.mars-technology {
+  max-width: 130rem;
+}
+.container-vehicule {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 3.2rem;
+}
+.activeTech {
+  background-color: white;
+  color: black;
+}
+.landscape {
+  display: none;
+}
+.title-technology {
+  align-self: flex-start;
+  margin-top: 20rem;
+  margin-bottom: -10rem;
+  margin-left: 0rem;
+}
+/**************************************************************************/
+/*********responsive*******************************************************/
+@media (max-width: 950px) {
+  .home {
+    background-image: url("/images/background-home-tablet.jpg");
+    flex-direction: column;
+  }
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6.4rem;
+    text-align: center;
+  }
+  .text {
+    align-items: center;
+  }
+
+  .destination {
+    background-image: url("/images/background-destination-tablet.jpg");
+  }
+  .mars {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-pic {
+    align-items: center;
+  }
+  .container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .description-text {
+    max-width: 50rem;
+    padding-left: 2rem;
+  }
+
+  .crew {
+    background-image: url("/images/background-crew-tablet.jpg");
+  }
+  .container-text-crew {
+    align-items: center;
+    text-align: center;
+  }
+  .navbarCrew {
+    margin-left: 10rem;
+  }
+
+  .technology {
+    background-image: url("/images/background-technology-tablet.jpg");
+  }
+  .mars-technology {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 3.2rem;
+    width: 100%;
+  }
+  .container-text-technology {
+    align-items: center;
+    justify-content: center;
+  }
+  .title-technology {
+    margin: 0;
+  }
+  .navbar-tech {
+    flex-direction: row;
+    margin-bottom: 3.2rem;
+  }
+  .container-pic-tech {
+    width: 100%;
+  }
+  .portrait {
+    display: none;
+  }
+  .landscape {
+    display: block;
+  }
+  .container-vehicule {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1200px) {
+  .title-technology {
+    margin-top: 10rem;
+    margin-bottom: -10rem;
+    margin-left: 5rem;
+  }
+
+  .navtech-container {
+    margin-left: 2rem;
+  }
+  .container-text-crew {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+  .title-crew {
+    align-self: center;
+    margin-bottom: -10rem;
+    margin-left: 0;
+  }
+}
+@media (max-width: 898px) {
+  html {
+    font-size: 58%;
+  }
+  .navbar {
+    padding: 0 3.2rem 0 3.2rem;
+  }
+  .navbarCrew {
+    margin-left: 1rem;
+  }
+  .title-technology {
+    margin-top: 20rem;
+  }
+}
+@media (max-width: 830px) {
+  html {
+    font-size: 58%;
+  }
+  .navbarCrew {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  html {
+    font-size: 55%;
+  }
+  .navbar-desktop {
+    display: none;
+  }
+  .line {
+    display: none;
+  }
+  .icon {
+    display: block;
+    margin-right: 4.8rem;
+    cursor: pointer;
+  }
+  .close {
+    margin-top: 3.2rem;
+    margin-left: 3.2rem;
+  }
+  .navbar-mobile {
+    display: block;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(18, 59, 99, 1)
+    );
+    box-shadow: 1.2rem 1.4rem 1.6rem rgba(0, 0, 0, 0.1);
+
+    width: 100%;
+  }
+  .title-technology {
+    order: 4;
+    margin-left: 0;
+  }
+  .title-technology {
+    align-self: center;
+    margin-top: 20rem;
+    margin-bottom: -15rem;
+
+    order: 1;
+  }
+  .mars-technology {
+    order: 4;
+  }
+  .navtech-container {
+    order: 1;
+  }
+  .container-pic-tech {
+    order: 2;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 48%;
+  }
+  .home {
+    background-image: url("/images/background-home-mobile.jpg");
+    flex-direction: column;
+  }
+
+  .destination {
+    background-image: url("/images/background-destination-mobile.jpg");
+  }
+
+  .crew {
+    background-image: url("/images/background-crew-mobile.jpg");
+  }
+
+  .technology {
+    background-image: url("/images/background-technology-mobile.jpg");
+  }
+  .planet {
+    max-width: 65%;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .navbarCrew {
+    margin-left: 0.5rem;
+    order: 1;
+  }
+  .container-bio-crew {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .container-pic-crew {
+    order: 1;
+  }
+  .container-text-crew {
+    order: 2;
+  }
+  .mars-crew {
+    gap: 0;
+  }
+  .container-pic-tech {
+    order: 3;
+  }
+  .navtech-container {
+    order: 2;
+  }
+  .container-text-technology {
+    order: 1;
+  }
+  .title-technology {
+    order: 4;
+    margin-left: 0;
+  }
+}
+@media (max-width: 380px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 35%;
+  }
+  .logo {
+    width: 15%;
+  }
+}
