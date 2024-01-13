@@ -7,7 +7,12 @@ const Mars = ({ image, name, description, distance, travel }) => {
         <h2 className="title">
           <span className=" num-destination">01</span> PICK YOUR DESTINATION
         </h2>
-        <img src={image} alt="mars-pic" className="img-fluid planet" />
+        <img
+          src={image}
+          alt="mars-pic"
+          className="img-fluid planet"
+          loading="lazy"
+        />
       </div>
 
       <div className="container-text ">

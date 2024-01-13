@@ -22,7 +22,12 @@ const Vehicule = ({ name, description, image, landscape }) => {
         </div>
 
         <div className="container-pic container-pic-tech">
-          <img src={image} alt="personne-pic" className="img-fluid portrait" />
+          <img
+            src={image}
+            alt="personne-pic"
+            className="img-fluid portrait"
+            loading="lazy"
+          />
           <img
             src={landscape}
             alt="personne-pic"

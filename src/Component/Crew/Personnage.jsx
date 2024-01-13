@@ -21,6 +21,7 @@ const Anoush = ({ name, image, role, bio }) => {
             src={image}
             alt="personne-pic"
             className="img-fluid image-personnage "
+            loading="lazy"
           />
         </div>
       </div>
