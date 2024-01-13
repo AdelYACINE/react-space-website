@@ -68,6 +68,7 @@ const NavBar = () => {
               `nav-link ${NavData.isActive ? "active" : ""}`
             }
             to="/"
+            onClick={() => setMenu(!menu)}
           >
             <span className="num">00</span>Home
           </NavLink>
@@ -77,6 +78,7 @@ const NavBar = () => {
             className={(NavData) =>
               `nav-link ${NavData.isActive ? "active" : ""}`
             }
+            onClick={() => setMenu(!menu)}
           >
             <span className="num">01</span>Destination
           </NavLink>
@@ -86,6 +88,7 @@ const NavBar = () => {
             className={(NavData) =>
               `nav-link ${NavData.isActive ? "active" : ""}`
             }
+            onClick={() => setMenu(!menu)}
           >
             <span className="num">02</span>Crew
           </NavLink>
@@ -95,6 +98,7 @@ const NavBar = () => {
             className={(NavData) =>
               `nav-link ${NavData.isActive ? "active" : ""}`
             }
+            onClick={() => setMenu(!menu)}
           >
             <span className="num">03</span>Technology
           </NavLink>
