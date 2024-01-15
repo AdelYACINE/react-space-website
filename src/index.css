@@ -73,6 +73,11 @@ body {
 .navbar-mobile {
   display: none;
 }
+.logo-link {
+  min-height: 4.8rem;
+  min-width: 4.8rem;
+  cursor: pointer;
+}
 /************home*********************************************/
 .home {
   position: absolute;
@@ -611,6 +616,9 @@ body {
     order: 4;
     margin-left: 0;
   }
+  .logo {
+    width: 85%;
+  }
 }
 @media (max-width: 380px) {
   html {
@@ -620,8 +628,5 @@ body {
 @media (max-width: 320px) {
   html {
     font-size: 35%;
-  }
-  .logo {
-    width: 15%;
   }
 }

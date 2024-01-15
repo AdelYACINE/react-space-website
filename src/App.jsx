@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Component/Home/Home";
 import Destination from "./Component/Destination/Destination";
 import Crew from "./Component/Crew/Crew";
@@ -14,7 +14,10 @@ function App() {
     <>
       <Router>
         <div className="header">
-          <img src="/images/logo.svg" alt="logo" className="img-fluid logo" />
+          <Link to={"/"} className="logo-link">
+            <img src="/images/logo.svg" alt="logo" className="img-fluid logo" />
+          </Link>
+
           <div className="line"></div>
           <NavBar />
         </div>

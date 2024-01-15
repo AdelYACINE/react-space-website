@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const NavDestination = () => {
+  const [active, setActive] = useState("active");
   return (
     <div className="navbar navbar-destination ">
       <NavLink
@@ -8,6 +10,9 @@ const NavDestination = () => {
           `nav-link nav-destination ${NavData.isActive ? "active" : ""}`
         }
         to="/destination/moon"
+        onClick={() => {
+          setActive("");
+        }}
       >
         MOON
       </NavLink>
@@ -15,7 +20,9 @@ const NavDestination = () => {
       <NavLink
         to="/destination/mars"
         className={(NavData) =>
-          `nav-link nav-destination  ${NavData.isActive ? "active" : ""}`
+          `nav-link nav-destination ${active} ${
+            NavData.isActive ? "active" : ""
+          } `
         }
       >
         MARS
@@ -26,6 +33,9 @@ const NavDestination = () => {
         className={(NavData) =>
           `nav-link nav-destination  ${NavData.isActive ? "active" : ""}`
         }
+        onClick={() => {
+          setActive("");
+        }}
       >
         EUROPA
       </NavLink>
@@ -35,6 +45,9 @@ const NavDestination = () => {
         className={(NavData) =>
           `nav-link nav-destination  ${NavData.isActive ? "active" : ""}`
         }
+        onClick={() => {
+          setActive("");
+        }}
       >
         TITAN
       </NavLink>
