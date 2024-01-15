@@ -21,9 +21,6 @@ const NavBar = () => {
           className={(NavData) =>
             `nav-link ${NavData.isActive ? "active" : ""}`
           }
-          onClick={() => {
-            setActive("active");
-          }}
         >
           <span className="num">01</span>Destination
         </NavLink>
@@ -33,9 +30,6 @@ const NavBar = () => {
           className={(NavData) =>
             `nav-link ${NavData.isActive ? "active" : ""}`
           }
-          onClick={() => {
-            setActiveCrew("activeCrew");
-          }}
         >
           <span className="num">02</span>Crew
         </NavLink>
@@ -45,9 +39,6 @@ const NavBar = () => {
           className={(NavData) =>
             `nav-link ${NavData.isActive ? "active" : ""}`
           }
-          onClick={() => {
-            setActiveTech("activeTech");
-          }}
         >
           <span className="num">03</span>Technology
         </NavLink>
@@ -89,7 +80,6 @@ const NavBar = () => {
             }
             onClick={() => {
               setMenu(!menu);
-              setActive("active");
             }}
           >
             <span className="num">01</span>Destination
@@ -102,7 +92,6 @@ const NavBar = () => {
             }
             onClick={() => {
               setMenu(!menu);
-              setActiveCrew("activeCrew");
             }}
           >
             <span className="num">02</span>Crew
@@ -115,7 +104,6 @@ const NavBar = () => {
             }
             onClick={() => {
               setMenu(!menu);
-              setActiveTech("activeTech");
             }}
           >
             <span className="num">03</span>Technology
